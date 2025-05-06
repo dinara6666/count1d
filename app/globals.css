@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+:root {
+  --app-background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+  --card-background: rgba(255, 255, 255, 0.9);
+  --panel-background: rgba(248, 250, 252, 0.8);
+  --list-background: white;
+  --item-background: white;
+  --input-background: white;
+  --dropdown-background: white;
+  --button-background: white;
+  --button-hover: #f8fafc;
+  --button-border: #e2e8f0;
+  --button-focus-shadow: rgba(59, 130, 246, 0.1);
+  --input-border: #e2e8f0;
+  --input-focus-shadow: rgba(59, 130, 246, 0.1);
+  --border-color: #eaedf0;
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --text-placeholder: #94a3b8;
+  --primary-color: #3b82f6;
+  --icon-color: #94a3b8;
+  --icon-background: rgba(59, 130, 246, 0.1);
+  --item-hover: #f8fafc;
+  --item-selected: #eff6ff;
+  --item-selected-hover: #dbeafe;
+  --card-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  --card-shadow-light: 0 4px 12px rgba(0, 0, 0, 0.03);
+  --item-shadow-hover: 0 8px 20px rgba(0, 0, 0, 0.05);
+  --dropdown-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  --flag-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --flag-background: linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(59, 130, 246, 0.1) 100%);
+  --spinner-background: rgba(0, 0, 0, 0.1);
+  --scrollbar-track: #f1f5f9;
+  --scrollbar-thumb: #cbd5e1;
+  --scrollbar-thumb-hover: #94a3b8;
+  --title-gradient: linear-gradient(135deg, #1e293b 0%, #3b82f6 100%);
+}
+
+.dark {
+  --app-background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  --card-background: rgba(30, 41, 59, 0.8);
+  --panel-background: rgba(15, 23, 42, 0.8);
+  --list-background: #1e293b;
+  --item-background: #1e293b;
+  --input-background: #1e293b;
+  --dropdown-background: #1e293b;
+  --button-background: #1e293b;
+  --button-hover: #0f172a;
+  --button-border: #334155;
+  --button-focus-shadow: rgba(59, 130, 246, 0.2);
+  --input-border: #334155;
+  --input-focus-shadow: rgba(59, 130, 246, 0.2);
+  --border-color: #334155;
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-placeholder: #64748b;
+  --primary-color: #60a5fa;
+  --icon-color: #cbd5e1;
+  --icon-background: rgba(96, 165, 250, 0.2);
+  --item-hover: #0f172a;
+  --item-selected: #1e40af;
+  --item-selected-hover: #1e3a8a;
+  --card-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  --card-shadow-light: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --item-shadow-hover: 0 8px 20px rgba(0, 0, 0, 0.2);
+  --dropdown-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  --flag-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  --flag-background: linear-gradient(135deg, rgba(96, 165, 250, 0.1) 0%, rgba(96, 165, 250, 0.2) 100%);
+  --spinner-background: rgba(255, 255, 255, 0.1);
+  --scrollbar-track: #0f172a;
+  --scrollbar-thumb: #334155;
+  --scrollbar-thumb-hover: #475569;
+  --title-gradient: linear-gradient(135deg, #f8fafc 0%, #60a5fa 100%);
+}

@@ -1,0 +1,50 @@
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.searchContainer {
+  margin-bottom: 1rem;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+.list {
+  flex: 1;
+  overflow-y: auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  max-height: 70vh;
+}
+
+.countryItem {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.countryItem:hover {
+  background-color: #f5f5f5;
+}
+
+.countryItem:last-child {
+  border-bottom: none;
+}
+
+.selected {
+  background-color: #e6f7ff;
+  font-weight: 500;
+}
